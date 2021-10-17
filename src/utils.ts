@@ -21,7 +21,7 @@ export function mergeOptions(
 ): AxiosAuthRefreshOptions {
   return {
     ...defaults,
-    pauseInstanceWhileRefreshing: options.skipWhileRefreshing,
+    pauseInstanceWhileRefreshing: options.pauseInstanceWhileRefreshing,
     ...options,
   };
 }

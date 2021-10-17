@@ -6,13 +6,6 @@ export interface AxiosAuthRefreshOptions {
   interceptNetworkError?: boolean;
   pauseInstanceWhileRefreshing?: boolean;
   onRetry?: (requestConfig: AxiosRequestConfig) => AxiosRequestConfig
-
-  /**
-   * @deprecated
-   * This flag has been deprecated in favor of `pauseInstanceWhileRefreshing` flag.
-   * Use `pauseInstanceWhileRefreshing` instead.
-   */
-  skipWhileRefreshing?: boolean;
 }
 
 export interface AxiosAuthRefreshCache {
